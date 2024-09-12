@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Housing Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: rgb(0, 0, 0, 0.5);
+
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/random/1600*900/?city,building') no-repeat center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 30px;
+        }
+        .hero p{
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .cta button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cta button:hover {
+            background-color: #45a049;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        .feature {
+            width: 25%;
+            text-align: center;
+        }
+        .feature h2 {
+            color: #4CAF50;
+        }
+
+        .about {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align:  center;
+        }
+        .about h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0   auto 30px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>Housing Finder</h2>
+        </div>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Student Housing Finder</h1>
+        <p>Your easy solution to find the perfect rental near campus.</p>
+        <div class="cta">
+            <button onclick="window.location.href='https://your-deployed-app.com'">Vist the App</button>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature">
+            <h2>Browse Vacancies</h2>
+            <p>View available house and apartments in real-time near your institution.</p>
+        </div>
+        <div class="feature">
+            <h2>Manage Payments</h2>
+            <p>Seamlessly pay rent and track your payments</p>
+        </div>
+        <div class="feature">
+            <h2>Locate Properties</h2>
+            <p>Get directions to available propeties right from the app.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About this Project</h2>
+        <p>This project was inspired by the need to simplify housing for students. As a student , I Personally faced challenges finding affordable and reliable housing near my institution. This exprience motivated me to create a platform whare students can esaily browse verifed listings, manage rent payments, and access directions to available homes. This project is also part of my portolio.</p>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 Student Housing Finder | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
